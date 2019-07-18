@@ -1,0 +1,24 @@
+
+
+lock-config: 
+  ####单机模式配置示例####
+  pattern: single
+  single-server:
+    address: 127.0.0.1
+    port: 6379
+    password: 123456
+  #######################
+  ####集群模式配置示例####
+  #pattern: cluster
+  #cluster-server:
+  #  node-addresses: 192.168.16.128:9001,192.168.16.128:9002,192.168.16.128:9003,192.168.16.128:9004,192.168.16.128:9005,192.168.16.128:9006
+  #######################
+  ####主从模式####
+  #pattern: master_slave
+  #master-slave-server:
+  #  master-address: 192.168.16.128:7000
+  #  slave-addresses: 192.168.16.128:7001,192.168.16.128:7002
+  #pattern: sentinel
+  #sentinel-server:
+  #  master-name: mymaster
+  #  sentinel-addresses: 192.168.13.128:27000,192.168.13.128:27001
